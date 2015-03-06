@@ -1,7 +1,10 @@
+var isNative = require("is_native");
+
+
 var isNode;
 
 
-if (typeof(Node) !== "undefined") {
+if (typeof(Node) !== "undefined" && isNative(Node)) {
     isNode = function isNode(obj) {
         return obj instanceof Node;
     };
