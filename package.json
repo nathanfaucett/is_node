@@ -21,6 +21,6 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "is_native": "git://github.com/nathanfaucett/is_native"
+    "is_function": "git://github.com/nathanfaucett/is_function"
   }
 }
