@@ -1,4 +1,7 @@
-var isFunction = require("is_function");
+var isString = require("is_string"),
+    isNullOrUndefined = require("is_null_or_undefined"),
+    isNumber = require("is_number"),
+    isFunction = require("is_function");
 
 
 var isNode;
@@ -10,10 +13,9 @@ if (typeof(Node) !== "undefined" && isFunction(Node)) {
     };
 } else {
     isNode = function isNode(value) {
-        return (
-            typeof(value) === "object" &&
-            typeof(value.nodeType) === "number" &&
-            typeof(value.nodeName) === "string"
+        return (!isNullOrUndefined(value) &&
+            isNumber(value.nodeType) &&
+            isString(value.nodeName)
         );
     };
 }
