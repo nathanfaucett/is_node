@@ -1,7 +1,7 @@
-var isString = require("is_string"),
-    isNullOrUndefined = require("is_null_or_undefined"),
-    isNumber = require("is_number"),
-    isFunction = require("is_function");
+var isString = require("@nathanfaucett/is_string"),
+    isNullOrUndefined = require("@nathanfaucett/is_null_or_undefined"),
+    isNumber = require("@nathanfaucett/is_number"),
+    isFunction = require("@nathanfaucett/is_function");
 
 
 var isNode;
